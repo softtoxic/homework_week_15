@@ -1,0 +1,19 @@
+<suite name="regression suite" verbose="1" >
+    <groups>
+        <run>
+            <include name="regression"></include>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="com.luma.page.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Luma Test" >
+        <classes>
+            <class name="com.luma.page.testsuite.GearTest"/>
+            <class name="com.luma.page.testsuite.MenTest"/>
+            <class name="com.luma.page.testsuite.WomenTest"/>
+        </classes>
+    </test>
+</suite>
